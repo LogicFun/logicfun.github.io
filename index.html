@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LogicFun - 逻辑乐园，一个有趣的逻辑思维游戏合集应用，包含8款精心设计的益智游戏">
+    <meta name="keywords" content="逻辑游戏,益智游戏,数独,Akari,瓶子配对,超级密码器,点格棋,2048,记忆翻牌,数字华容道">
+    <title>LogicFun - 逻辑乐园 | 逻辑思维游戏合集</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="images/app_icon.png" alt="LogicFun Logo" class="nav-logo">
+                <span class="brand-name">LogicFun</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">特色</a>
+                <a href="#games">游戏</a>
+                <a href="#download">下载</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <img src="images/app_icon.png" alt="LogicFun Logo" class="hero-logo">
+                <h1 class="hero-title">LogicFun - 逻辑乐园</h1>
+                <p class="hero-subtitle">让逻辑思维变得有趣！🧠✨</p>
+                <p class="hero-description">
+                    精心打造的逻辑小游戏合集应用<br>
+                    8款精心设计的益智游戏 · 1000+精选关卡 · 完全免费
+                </p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn btn-primary">立即下载</a>
+                    <a href="#games" class="btn btn-secondary">探索游戏</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 应用预览 -->
+    <section class="screenshots">
+        <div class="container">
+            <h2 class="section-title">📱 应用预览</h2>
+            <p class="section-subtitle">横向滚动浏览，点击图片查看大图</p>
+
+            <div class="gallery-wrapper">
+                <button class="gallery-nav gallery-nav-left" aria-label="向左滚动">
+                    <span>&#10094;</span>
+                </button>
+                <div class="gallery">
+                    <div class="gallery-item" data-caption="LogicFun - 8款精选逻辑益智游戏">
+                        <img src="images/LogicFun.png" alt="LogicFun 主界面">
+                    </div>
+                    <div class="gallery-item" data-caption="瓶子配对 - 颜色排序益智游戏">
+                        <img src="images/BottleGame.png" alt="瓶子配对游戏">
+                    </div>
+                    <div class="gallery-item" data-caption="点亮灯泡 - 光线逻辑谜题">
+                        <img src="images/AkariGame.png" alt="点亮灯泡游戏">
+                    </div>
+                    <div class="gallery-item" data-caption="数独游戏 - 经典数独挑战">
+                        <img src="images/SudokuGame.png" alt="数独游戏">
+                    </div>
+                    <div class="gallery-item" data-caption="超级密码器 - 逻辑推理游戏">
+                        <img src="images/DecoderGame.png" alt="超级密码器游戏">
+                    </div>
+                    <div class="gallery-item" data-caption="记忆翻牌 - 考验记忆力">
+                        <img src="images/MemoryGame.png" alt="记忆翻牌游戏">
+                    </div>
+                    <div class="gallery-item" data-caption="点格棋 - 策略对战游戏">
+                        <img src="images/DotboxGame.png" alt="点格棋游戏">
+                    </div>
+                    <div class="gallery-item" data-caption="数字华容道 - 滑块谜题">
+                        <img src="images/KlotskiGame.png" alt="数字华容道游戏">
+                    </div>
+                    <div class="gallery-item" data-caption="2048 - 经典数字合成游戏">
+                        <img src="images/2048Game.png" alt="2048游戏">
+                    </div>
+                </div>
+                <button class="gallery-nav gallery-nav-right" aria-label="向右滚动">
+                    <span>&#10095;</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 图片灯箱 -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <span class="lightbox-prev">&#10094;</span>
+        <span class="lightbox-next">&#10095;</span>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- 特色功能 -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">🎯 项目特色</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3>8款精选游戏</h3>
+                    <p>从颜色配对到数独，从记忆翻牌到策略对战，总有一款适合你</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>1000+关卡</h3>
+                    <p>精心设计的关卡，从简单到困难，循序渐进挑战你的逻辑思维</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>随时随地畅玩</h3>
+                    <p>支持手机和平板，横屏竖屏都能玩，完美适配各种设备</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💡</div>
+                    <h3>智能提示</h3>
+                    <p>遇到困难？智能提示系统帮你一步步解决难题</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>成就挑战</h3>
+                    <p>丰富的成就等你解锁，记录你的每一次进步</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🆓</div>
+                    <h3>完全免费</h3>
+                    <p>无需付费，无广告打扰，纯粹的游戏乐趣</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 游戏列表 -->
+    <section id="games" class="games">
+        <div class="container">
+            <h2 class="section-title">🎲 游戏列表</h2>
+            <p class="section-subtitle">8款精心设计的逻辑益智游戏，总计超过1000个精选关卡</p>
+            
+            <div class="games-grid">
+                <!-- 瓶子配对 -->
+                <div class="game-card" style="--card-color: #2196F3">
+                    <div class="game-header">
+                        <div class="game-icon">🧪</div>
+                    </div>
+                    <h3 class="game-title">瓶子配对</h3>
+                    <p class="game-subtitle">SeqBottle · 颜色排序益智游戏</p>
+                    <p class="game-description">移动上排瓶子，使其颜色和位置与下排目标排列一致。简单易学，策略性强。</p>
+                    <div class="game-features">
+                        <span class="tag">4个难度级别</span>
+                        <span class="tag">智能评级系统</span>
+                        <span class="tag">计时统计</span>
+                    </div>
+                </div>
+
+                <!-- 超级密码器 -->
+                <div class="game-card" style="--card-color: #9C27B0">
+                    <div class="game-header">
+                        <div class="game-icon">🔐</div>
+                    </div>
+                    <h3 class="game-title">超级密码器</h3>
+                    <p class="game-subtitle">SuperDecoder · 逻辑推理解谜游戏</p>
+                    <p class="game-description">在7次尝试内破解由4个颜色组成的密码序列，根据反馈提示逐步缩小答案范围。</p>
+                    <div class="game-features">
+                        <span class="tag">双游戏模式</span>
+                        <span class="tag">30个关卡</span>
+                        <span class="tag">双难度等级</span>
+                    </div>
+                </div>
+
+                <!-- Akari -->
+                <div class="game-card" style="--card-color: #FFC107">
+                    <div class="game-header">
+                        <div class="game-icon">💡</div>
+                    </div>
+                    <h3 class="game-title">点亮灯泡</h3>
+                    <p class="game-subtitle">Akari · 光线逻辑谜题游戏</p>
+                    <p class="game-description">在网格中策略性地放置灯泡，照亮所有白色格子，同时满足数字约束和避免灯泡冲突。</p>
+                    <div class="game-features">
+                        <span class="tag">100个谜题</span>
+                        <span class="tag">5个难度级别</span>
+                        <span class="tag">智能提示</span>
+                    </div>
+                </div>
+
+                <!-- 数独 -->
+                <div class="game-card" style="--card-color: #9C27B0">
+                    <div class="game-header">
+                        <div class="game-icon">🔢</div>
+                    </div>
+                    <h3 class="game-title">数独游戏</h3>
+                    <p class="game-subtitle">Sudoku · 传统数独逻辑挑战</p>
+                    <p class="game-description">经典的9×9数独游戏，填入数字使每行、每列和每个3×3宫格都包含1-9的数字。</p>
+                    <div class="game-features">
+                        <span class="tag">多个难度</span>
+                        <span class="tag">自动笔记</span>
+                        <span class="tag">错误检查</span>
+                    </div>
+                </div>
+
+                <!-- 记忆翻牌 -->
+                <div class="game-card" style="--card-color: #FF9800">
+                    <div class="game-header">
+                        <div class="game-icon">🃏</div>
+                    </div>
+                    <h3 class="game-title">记忆翻牌</h3>
+                    <p class="game-subtitle">Memory Game · 记忆力训练游戏</p>
+                    <p class="game-description">翻开卡牌找到相同的配对，考验记忆力和专注力。在最短时间内完成所有配对。</p>
+                    <div class="game-features">
+                        <span class="tag">5个难度级别</span>
+                        <span class="tag">6种主题</span>
+                        <span class="tag">提示系统</span>
+                    </div>
+                </div>
+
+                <!-- 点格棋 -->
+                <div class="game-card" style="--card-color: #3182CE">
+                    <div class="game-header">
+                        <div class="game-icon">⬜</div>
+                    </div>
+                    <h3 class="game-title">点格棋</h3>
+                    <p class="game-subtitle">Dots and Boxes · 策略对战游戏</p>
+                    <p class="game-description">在网格上画线，完成更多方格获得胜利。与智能AI对战，展现你的策略思维。</p>
+                    <div class="game-features">
+                        <span class="tag">智能AI对战</span>
+                        <span class="tag">多种网格</span>
+                        <span class="tag">成就系统</span>
+                    </div>
+                </div>
+
+                <!-- 数字华容道 -->
+                <div class="game-card" style="--card-color: #4CAF50">
+                    <div class="game-header">
+                        <div class="game-icon">🧩</div>
+                    </div>
+                    <h3 class="game-title">数字华容道</h3>
+                    <p class="game-subtitle">Klotski · 经典滑块益智挑战</p>
+                    <p class="game-description">移动滑块，将数字按顺序排列。经典的益智游戏，考验空间思维能力。</p>
+                    <div class="game-features">
+                        <span class="tag">多种尺寸</span>
+                        <span class="tag">步数统计</span>
+                        <span class="tag">最佳记录</span>
+                    </div>
+                </div>
+
+                <!-- 2048 -->
+                <div class="game-card" style="--card-color: #EDC22E">
+                    <div class="game-header">
+                        <div class="game-icon">🔢</div>
+                    </div>
+                    <h3 class="game-title">2048</h3>
+                    <p class="game-subtitle">2048 · 经典数字合并益智游戏</p>
+                    <p class="game-description">滑动方块合并相同数字，目标是创造出2048方块。简单规则，无限挑战。</p>
+                    <div class="game-features">
+                        <span class="tag">经典玩法</span>
+                        <span class="tag">最高分记录</span>
+                        <span class="tag">撤销功能</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 下载区域 -->
+    <section id="download" class="download">
+        <div class="container">
+            <h2 class="section-title">📥 立即下载</h2>
+            <p class="section-subtitle">支持 Android 和 iOS 平台，完全免费</p>
+            <div class="download-buttons">
+                <a href="#" class="download-btn android">
+                    <div class="download-icon">🤖</div>
+                    <div class="download-info">
+                        <div class="download-label">下载 Android 版</div>
+                        <div class="download-desc">Android 5.0+</div>
+                    </div>
+                </a>
+                <a href="#" class="download-btn ios">
+                    <div class="download-icon">🍎</div>
+                    <div class="download-info">
+                        <div class="download-label">下载 iOS 版</div>
+                        <div class="download-desc">iOS 11.0+</div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>LogicFun</h4>
+                    <p>让逻辑思维变得有趣！</p>
+                </div>
+                <div class="footer-section">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li><a href="mailto:support@logicfun.com">邮箱支持</a></li>
+                        <li><a href="#download">下载应用</a></li>
+                        <li><a href="privacy.html">隐私政策</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>法律</h4>
+                    <ul>
+                        <li><a href="privacy.html">隐私政策</a></li>
+                        <li><a href="terms.html">用户协议</a></li>
+                        <li><a href="terms.html#copyright">版权声明</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LogicFun. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
