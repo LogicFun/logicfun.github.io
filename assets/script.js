@@ -54,13 +54,7 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
-// 下载按钮点击提示
-document.querySelectorAll('.download-btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        alert('应用即将上线，敬请期待！');
-    });
-});
+
 
 // Gallery 横向滚动控制
 document.addEventListener('DOMContentLoaded', () => {

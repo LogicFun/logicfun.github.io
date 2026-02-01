@@ -216,6 +216,8 @@ body {
     margin-bottom: 1rem;
 }
 
+
+
 .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -642,6 +644,8 @@ body {
     text-align: center;
 }
 
+
+
 .download-buttons {
     display: flex;
     gap: 2rem;
@@ -673,12 +677,21 @@ body {
     border: 2px solid #3DDC84;
 }
 
+
+
 .download-btn.ios {
     border: 2px solid #000000;
 }
 
+.download-btn.ios .download-icon {
+    color: #000000;
+}
+
 .download-icon {
     font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .download-info {
